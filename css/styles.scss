@@ -78,6 +78,7 @@ article {
 // +-- GRID --+
 .one-whole {
 	float: left;
+	width: 100%;
 }
 .one-half {
 	position:relative;
@@ -194,7 +195,8 @@ article {
 		color: $colorTertiary;
 		font-size: 24px;
 
-		&:hover {
+		&:hover
+		 {
 			color: $colorPrimary;
 		}
 	}
@@ -287,9 +289,6 @@ article {
 
 // +-- Projects Listing Area --+
 
-.projects {
-}
-
 .projects-wrapper {
 	text-align: center;
 	img {
@@ -327,7 +326,7 @@ article {
 	background-color: $colorPrimary;
 	padding: $baseUnit*4 0 0 0;
 	overflow: hidden;
-	&:hover {
+	&:hover, :focus, {
 		.project-hover{
 			opacity: 1;
 			background-color: rgba(255,255,255,0.95);
@@ -403,15 +402,24 @@ article {
 	margin-bottom: $baseUnit;
 }
 
+.columns {
+	float:left;
+}
 .box-open{
 	display: none;
 }
 
 .box-image {
-	float:left;
-	min-height: 375px;
+	float: left;
+    width: 25%;
+    position: relative;
 }
 
+.info-content{
+	float: left;
+    width: 75%;
+    position: relative;
+}
 .box-image:hover {
 	.box-open {
 		display: block;

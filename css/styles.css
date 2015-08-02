@@ -43,7 +43,8 @@ article {
   margin: 0 auto; }
 
 .one-whole {
-  float: left; }
+  float: left;
+  width: 100%; }
 
 .one-half {
   position: relative;
@@ -299,7 +300,7 @@ article {
   background-color: #f5989d;
   padding: 60px 0 0 0;
   overflow: hidden; }
-  .single-project:hover .project-hover {
+  .single-project:hover .project-hover, .single-project :focus .project-hover {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.95);
     animation-name: fade-up;
@@ -350,12 +351,21 @@ article {
   margin-top: 37.5px;
   margin-bottom: 15px; }
 
+.columns {
+  float: left; }
+
 .box-open {
   display: none; }
 
 .box-image {
   float: left;
-  min-height: 375px; }
+  width: 25%;
+  position: relative; }
+
+.info-content {
+  float: left;
+  width: 75%;
+  position: relative; }
 
 .box-image:hover .box-open {
   display: block; }
